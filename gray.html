@@ -1,0 +1,103 @@
+<html>
+	<head>
+		<title>Idk Titles Are Difficult</title>
+		<style>
+			body
+			{
+				color: gray;
+				background-color: whitesmoke;
+				border-color: gray;
+				border-style: double;
+				text-align: center;
+				font-size: 50;
+				padding: 25;
+			}
+			button
+			{
+				background-color: gainsboro;
+				color: gray;
+				border-color: gray;
+				border-style: solid;
+				font-size: 25;
+			}
+			button:hover
+			{
+				transition: 0.5s;
+				opacity: 50%;
+			}
+			.pink
+			{
+				border-style: double;
+				font-size: 25;
+				width: 500;
+				margin: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Pick an option!</p>
+		<button class="red" onclick="Red()">Option 1!</button>
+		<button class="red" onclick="Red()">Option 2!</button>
+		<div id="red" style="display:none;">
+			<p>Pick another option!</p>
+			<button class="orange" onclick="Orange()">Option 1!</button>
+			<button class="orange" onclick="Orange()">Option 2!</button>
+		</div>
+		<div id="orange" style="display:none;">
+			<p>Pick another option!</p>
+			<button class="yellow" onclick="Yellow()">Option 1!</button>
+			<button class="yellow" onclick="Yellow()">Option 2!</button>
+		</div>
+		<div id="yellow" style="display:none;">
+			<p>Pick another option!</p>
+			<button class="green" onclick="Green()">Option 1!</button>
+			<button class="green" onclick="Green()">Option 2!</button>
+		</div>
+		<div id="green" style="display:none;">
+			<p>Pick another option!</p>
+			<button class="blue" onclick="Blue()">Option 1!</button>
+			<button class="blue" onclick="Blue()">Option 2!</button>
+		</div>
+		<div id="blue" style="display:none;">
+			<p>Pick another option!</p>
+			<button class="purple" onclick="Purple()">Option 1!</button>
+			<button class="purple" onclick="Purple()">Option 2!</button>
+		</div>
+		<br id="magic">
+		<div id="purple" class="pink" style="display:none;">
+			<p>I love you!</p>
+			<p>(all the options make it say I love you)</p>
+			<p>(because I love you no matter what)</p>
+		</div>
+		<br>
+		<button onclick="document.location = 'index.html'">Go Back!</button>
+		
+		<script>
+			function Red()
+			{
+				document.getElementById("red").style.display = "";
+			}
+			function Orange()
+			{
+				document.getElementById("orange").style.display = "";
+			}
+			function Yellow()
+			{
+				document.getElementById("yellow").style.display = "";
+			}
+			function Green()
+			{
+				document.getElementById("green").style.display = "";
+			}
+			function Blue()
+			{
+				document.getElementById("blue").style.display = "";
+			}
+			function Purple()
+			{
+				document.getElementById("purple").style.display = "";
+				document.getElementById("magic").style.display = "";
+			}
+		</script>
+	</body>
+</html>
